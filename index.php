@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="css/style.css" />
   <title>v!st@CARS</title>
 </head>
-
+<?php include_once("inc/connectien.inc.php"); ?>
 <body>
   <img class="logovista" src="images/logovista.webp" alt="">
   <!-- #region Navbar-->
@@ -33,10 +33,11 @@
     <div class="sowe_recauto">
     recenten auto,s
     <div class="sowe_recenteauto">
-nog bezig
+<?php    include_once("inc/auto.inc.php");   ?>
     </div>
     <a href="showroom.php">bekijk showroom</a>
     </div>
+
     <div class="ons_team">
 <?php include_once("inc/ons_team.inc.php") ?>
     </div>
