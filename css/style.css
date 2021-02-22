@@ -90,9 +90,9 @@
         width: 100%;
         height: 85%;
         background-color: #6161fb;
-        color: gray;
+        color: black;
         text-align: center;
-        font-size: 400%;
+        font-size: 500%;
         overflow: scroll;
     }
     .bloks{
@@ -162,4 +162,14 @@
         display: flex;
         flex-wrap: wrap;
         overflow: scroll;
+    }
+    .text_ons_team{
+        width: 100%;
+        height: 100px;
+        /* background-color: red; */
+    }
+    .contactpagiena{
+        width: 100%;
+        height: 1000px;
+        background-color: black;
     }

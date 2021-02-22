@@ -39,6 +39,9 @@
     </div>
 
     <div class="ons_team">
+      <div class="text_ons_team">
+      ons team
+      </div>
 <?php include_once("inc/ons_team.inc.php") ?>
     </div>
 

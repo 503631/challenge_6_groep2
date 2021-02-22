@@ -22,9 +22,15 @@
   <div class="top_img">V!ST@CARS</div>
   <div class="centered">lorem ipsum is slechts een proefdruck</div>
   </div>
+    <div class="contactpagiena">
+
+    </div>
 
 
 
+
+
+    
 
       <!-- #region Footer-->
       <div id="footer">
