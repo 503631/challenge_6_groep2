@@ -22,29 +22,16 @@
   <div class="top_img">V!ST@CARS</div>
   <div class="centered">lorem ipsum is slechts een proefdruck</div>
   </div>
-
-  <div class="bolk">
-    <div class="bolk_text">
-    <div class="bolk_text_text">
-        hallo
+  <div class="filter">
+        moet filter in geplaats worden
     </div>  
-    </div>    
-  </div>
-    <div class="sowe_recauto">
-    recenten auto,s
-    <div class="sowe_recenteauto">
-<?php    include_once("inc/autosow.inc.php");   ?>
-    </div>
-    <a href="showroom.php">bekijk showroom</a>
-    </div>
-
-    <div class="ons_team">
-<?php include_once("inc/ons_team.inc.php") ?>
+    <div class="sowe_auto">
+<?php    include_once("inc/auto.inc.php");   ?>
     </div>
 
 
-    <!-- #region Footer-->
-    <div id="footer">
+      <!-- #region Footer-->
+      <div id="footer">
   <script>
     $("#footer").load("common/footer.html");
   </script>

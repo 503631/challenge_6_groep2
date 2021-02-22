@@ -1,5 +1,5 @@
 <?php
-$sql = "SELECT * FROM autos_test" ;
+$sql = "SELECT * FROM autos_test LIMIT 3" ;
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
 $result = $stmt->fetchAll(); // get result
