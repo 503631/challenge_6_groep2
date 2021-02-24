@@ -56,7 +56,7 @@
           <ul>
             <li onclick="location.href='index.php?page=albums'">auto's</li>
             <li onclick="location.href='index.php?page=klanten'">Klanten</li>
-            <li onclick="location.href='index.php?page=weborders'">Weborders</li>
+            <li onclick="location.href='index.php?page=weborders'">offertes</li>
             <li onclick="location.href='index.php?page=rapporten'">Rapporten</li>
             <li onclick="uitloggen()">Uitloggen</li>
           </ul>
