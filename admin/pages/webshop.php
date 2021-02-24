@@ -40,50 +40,19 @@
 
   ?>
 
-  <div class="content">
-    <form name="webshop" id="webshop" action="index.php?page=bestellen" method="POST">
 
-      <?php
 
-      //Dit is het bestelformulier met albums uit de database
-      $stmt = $pdo->prepare($sql);
-      $stmt->execute();
-      $albums = $stmt->fetchAll(PDO::FETCH_ASSOC);
-      $lus = 0;
-      foreach ($albums as $album) {
-        // echo "<img width='100px' src='img/" . $album['images'] . "' />";
-        $img =  $album['images'];
-        echo '<img class="test" src="data:image/jpg;base64,' . base64_encode($img) . '" />';
-        echo "<input type='hidden' name='id[$lus]' value='" . $album['id'] . "' />";
-        echo "<input type='hidden' name='naam[$lus]' id='naam[$lus]' value='" . $album['naam'] . "' />";
-        echo "<input type='hidden' name='merken[$lus]' id='merken[$lus]'value='" . $album['merken'] . "' />";
-        echo "<input type='hidden' name='jaar[$lus]' id='jaar[$lus]' value='" . $album['jaar'] . "' />";
-        echo "<input type='hidden' name='prijs'[$lus]' id='prijs[$lus]' value='" . $album['prijs'] . "' />  ";
-        echo "<br /> titel:" . $album["naam"];
-        echo "<br /> prijs:" . $album["prijs"];
-        echo "<br /> Voorraad:" . $album["voorraad"];
-        echo "<br />Aantal:";
-        echo "<input class='aantal' type='text' style='width:10%;' name='aantal[$lus]' id='aantal[$lus]' value='' />";
-        echo "<hr />";
-        $lus++;
-      }
-      echo "<input type='hidden' name='lus' id='lus' value='" . $lus . "' />";
-      ?>
+<?php
+$stmt = $pdo->prepare($sql);
+$stmt->execute();
+$result = $stmt->fetchAll(); // get result
 
-      <!--winkelmandje aan en uitzetten --
-      <input type="checkbox" name="winkelmanje_knop" id="winkelmandje_knop" onclick="javascript:showWinkelmandje();" class="icon" value="&#128717;" />
-      <label for="winkelmandje_knop">&#128717;</label>
-      <br />
-      <div class="icon_container">
-        <input type="submit" class="icon" id="submit" name="submit" value="&rarr;" />
-      </div>
-      <br />
-      <!-winkelmandje--
-      <div id="winkelmandje">
-        <div id="rijen"></div>
-        <input type="checkbox" id="winkelmandje_knop" onclick="javascript:showWinkelmandje();" class="icon" value="x" />
-        <label for="winkelmandje_knop" style="color:red;">&#8861;</label>-->
-      </div>
-</body>
-
-</html>
+foreach ($result as $key => $row)  {
+    $id = $row['id'];
+    $naam = $row['naam'];
+    $img = $row['foto'];
+    $merken = $row['merken'];
+    $prijs = $row['prijs'];
+    $jaar = $row['jaar'];
+    include("template.php");
+}
