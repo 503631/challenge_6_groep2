@@ -49,6 +49,7 @@ if (isset($_POST['submit'])) {
     $query = "UPDATE klant SET 'voornaam' = ?, 'achternaam' =?,
             'straat' = ?, 'postcode' = ?, 'woonplaats' = ?, 'email' = ? WHERE 'email' = ? ";
     $stmt = $pdo->prepare($query);
+    
     try {
         $stmt = $stmt->execute(array(
             $voornaam, $achternaam, $straat,

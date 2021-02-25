@@ -13,7 +13,7 @@ $albums = $stmt->fetchAll(PDO::FETCH_ASSOC);
 foreach ($albums as $album) {
 ?>
   <div class="content">
-    <form name="edit" class="form" action="index.php?page=album_update" method="POST">
+    <form name="edit" class="form" action="index.php?page=klanten_update" method="POST">
       <p id="page_titel">Edit Klanten</p>
       <input type="hidden" name="id" id="id" value="<?php echo $album['ID']; ?>" />
       <label>Voornaam:</label>

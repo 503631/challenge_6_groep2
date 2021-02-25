@@ -19,7 +19,7 @@ foreach ($autos as $auto) {
       <label>Naam:</label>
       <input type="text" name="naam" id="naam" value="<?php echo $auto['naam']; ?>" />
       <label>Foto:</label>
-      <input type="file" name="image" id="image" value="<?php echo $auto['foto']; ?> " />
+      <input type="file" name="image" id="image" value="" />
       <label>Merken:</label>
       <input type="text" name="merk" id="merk" value="<?php echo $auto['merken']; ?>" />
       <label>Bouw Jaar:</label>
@@ -27,9 +27,9 @@ foreach ($autos as $auto) {
       <label>Prijs:</label>
       <input type="text" name="prijs" id="prijs" value="<?php echo $auto['prijs']; ?>" />
       <label>Brand stof:</label>
-      <input type="text" name="brandstof" id="brandstof" value="<?php echo $auto['brand stof']; ?>" />
+      <input type="text" name="brand_stof" id="brandstof" value="<?php echo $auto['brand_stof']; ?>" />
       <label>New/Twee hands:</label>
-      <input type="text" name="new/twee" id="brandstof" value="<?php echo $auto['new/twee']; ?>" />
+      <input type="text" name="new_twee" id="new_twee" value="<?php echo $auto['new_twee']; ?>" />
       <br />
       <div class="icon_container">
         <input type="submit" class="icon" id="submit" name="submit" value="&rarr;" />

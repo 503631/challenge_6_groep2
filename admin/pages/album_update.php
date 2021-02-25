@@ -17,8 +17,7 @@ if(isset($_POST['submit'])){
     $brandstof =  htmlspecialchars($_POST['brandstof']);
     $newOfTwee =   htmlspecialchars($_POST['new/twee']);
 
-    $sql = "UPDATE autos_test SET 'naam' = ?, 'foto' =?,
-            'merken' = ?, 'prijs' = ?, 'jaar' = ?, 'brand_stof' = ?, 'new_twee' = ?,  WHERE 'id' = ? ";
+    $query = "UPDATE autos_test SET 'naam' = ?, 'foto' =?, 'merken' = ?, 'prijs' = ?, 'jaar' = ?, 'brand_stof' = ?, 'new_twee' = ?,  WHERE 'id' = ? ";
     $stmt = $pdo->prepare($query);
     try{
         $stmt = $stmt->execute(array($naam, $images, $merken,
@@ -31,3 +30,4 @@ if(isset($_POST['submit'])){
           echo $e->getMessage();
     }
 }
+

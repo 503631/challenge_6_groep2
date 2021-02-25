@@ -17,16 +17,14 @@
     }
     ?>
     <div class="content">
-        <form name="albumtoevoegen" class="form" action="" method="POST">
+        <form name="albumtoevoegen" class="form" action="" method="post" enctype="multipart/form-data">
             <p id="page_titel"> auto toevoegen</p>
             <label>Naam:</label>
             <input type="text" name="naam" id="naam" value="" />
+
             <label>Foto:</label>
-            <input type="file" name="image" id="image" value="" />
-            <label>Foto_2:</label>
-            <input type="file" name="image_2" id="image_2" value="" />
-            <label>Foto_3:</label>
-            <input type="file" name="image_3" id="image_3" value="" />
+            <input type="file" name="image[]" id="image" value="" multiple />
+           
             <label>Merken:</label>
             <input type="text" name="merk" id="merk" value="" />
             <label>Jaar:</label>

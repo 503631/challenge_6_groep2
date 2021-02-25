@@ -5,4 +5,4 @@ if (isset($_SESSION["ID"]) && ($_SESSION["STATUS"] != "ACTIEF")) {
             location.href='../index.php';
         </script>";
 }
-
+?>
