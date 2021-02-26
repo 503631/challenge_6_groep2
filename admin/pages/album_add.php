@@ -22,18 +22,34 @@ if(isset($_POST["submit"])){
     $voorraad =   htmlspecialchars($_POST['voorraad']);
     
     $sql = "INSERT INTO autos_test (id, naam, merken, jaar, prijs, brand_stof, new_twee,voorraad) Values (?,?,?,?,?,?,?,?)";
-    $stmt = $pdo->prepare($sql);
+    $stmt = $pdo->prepare($sql);    
     try{
 
-       $stmt->execute(array(NULL,$naam,$foto,$merken,$jaar,$prijs,$brand_stof,$new_twee,$foto_2,$foto_3,$voorraad));
-       $lastId = $pdo->lastIndertId();
+       $stmt->execute(array(NULL,$naam,$merken,$jaar,$prijs,$brand_stof,$new_twee,$voorraad));
+    //    $lastId = $pdo->lastIndertId();
+        // $last_id = $conn->insert_id;
 
+    //    echo "$lastId";
+
+
+    $sql = "SELECT * FROM autos_test" ;
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute();
+    $result = $stmt->fetchAll(); // get result
+    foreach ($result as $key => $row)  {
+        $last_id = $row['id'];
+
+    }
+        echo "$last_id";
         //van hier foto's in database toevoegen
         echo "fotos: ";
         print_r($_FILES);
         echo "<br />post: ";
         print_r($_POST);
-        die;
+        // die;
+
+        include("add_photos.php");
+        
 
         $melding = "Nieuw album toegevoegd.";
         
