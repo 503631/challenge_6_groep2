@@ -16,18 +16,40 @@
     //    $image = imagecreatefromstring($blob); 
     //    $image = imagecreatefromstring($blob); 
     //header("Content-Type: image/jpeg");
-    echo '<div class="contentItem">';
-    echo '<form action="./showroom_cars.php" method="post">';
-    echo '<div class="row">';
-    echo '<input hidden value="' . $id . '" name="id">';
-    echo '<input hidden value="goed" name="goed">';
-    echo '<img class="auto_img" src="data:image/jpg;base64,' . base64_encode($img) . '" />';
-    echo '<input class="button" type="submit" value=" ' . $naam . ' ">';
-    echo '<br />';
-    echo '<input class="button" type="submit" value=" ' . $prijs . ' ">';
-    echo '</div>';
-    echo '</form>';
-    echo '</div>';
+
+
+
+
+
+
+//werkt
+
+
+echo '<div class="contentItem">';
+echo '<form action="./showroom_cars.php" method="post">';
+echo '<div class="row">';
+echo "$naam";
+echo '<input hidden value="' . $id . '" name="id">';
+echo '<input hidden value="goed" name="goed">';
+// echo '<img class="auto_img" src="data:image/jpg;base64,' . base64_encode($img) . '" />';
+echo '<img class="auto_img"  src="./admin/upload/'.$id.'/'.$img.'" />';
+echo '<br />';
+echo '<input class="button" type="submit" value=" ' . $prijs . ' ">';
+echo '</div>';
+echo '</form>';
+echo '</div>';
+
+
+//werkt
+
+
+
+
+
+
+
+
+
 
 
 
@@ -40,14 +62,16 @@
 // }
 // $image = urlsafe_b64encode($img);
 //    $menu = <<<HTML
+//     <div class="contentItem">
 //    <form action="./showroom.php" method="post">
 //    <div class="contentItem">
 //      <div class="row">
-//      <div  class="menutitle" name="id">$merken</div>
+//      <input hidden value="$id" name="id">
+//      <div  class="menutitle" name="id">$naam</div>
 //         <!-- <div class="price" name="prijs">$image</div> -->
 //      </div>
-//         <img src="data:image/jpg;base64,'.$image.'" />
-//         <img class="auto_img" src="data:image/jpg;base64,'.base64_encode($image).'" />
+//         <img class="auto_img"  src="./admin/upload/$id/$img" />
+//         <!-- <img class="auto_img" src="data:image/jpg;base64,'.base64_encode($image).'" /> -->
 //         <input class="button" type="submit" value="$merken">
 //    </div>
 //    </form>
