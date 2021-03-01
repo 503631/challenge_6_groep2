@@ -27,43 +27,36 @@ $output_dir = "upload/";/* Path for file upload */
            {
                @mkdir($output_dir . $last_id, 0777);
            }
-                       
-            move_uploaded_file($_FILES["image"]["tmp_name"][$i],$output_dir.$last_id."/".$NewImageName );
-           
+
+            move_uploaded_file($_FILES["image"]["tmp_name"][$i],$output_dir.$last_id."/".$NewImageName );    
             /*$insert_img = "insert into `category_images` SET `category_ads_id`='".$category_ads_id_image."', `image`='".$NewImageName."'";
              $result = $dbobj->query($insert_img);*/
-
-             
+             $id = $last_id;
+             $ImageName = $NewImageName;
+             $sql = "INSERT INTO photos (auto_id,  name_photos ) Values ('$id','$ImageName')"; 
+             $stmt = $pdo->prepare($sql);
+             $stmt->execute();
               }
    
        echo "Image Uploaded Successfully";
 
 
+    
+    //    $id = $last_id;
+    //           $ImageName = $NewImageName;
+              
        
-
-
-       $id = $last_id;
-       $ImageName = $NewImageName;
-
-    $sql = "INSERT INTO photos (auto_id,  name_photos ) Values ('$id','$ImageName')"; 
-    $stmt = $pdo->prepare($sql);
-    $stmt->execute();
-    $result = $stmt->fetchAll();    
-
-// $stmt->execute(array(NULL,$id,$ImageName));
-
-
-
-
-//     $sql = "SELECT * FROM photos" ;
-//     $stmt = $pdo->prepare($sql);
-//     $stmt->execute();
-//     $result = $stmt->fetchAll(); // get result
-//     foreach ($result as $key => $row)  {
-//         $id = $row['id'];
-
-//     }
-
-
-
-//     $sql = "INSERT INTO autos_test (foto) Values ($id)";
+       
+       
+       
+       
+    //        $artikellen = $_FILES['image'];
+    //        $B = 0;
+    //        $a = 3;
+    //        while ($B < $a){
+    //        $sql = "INSERT INTO photos (auto_id,  name_photos ) Values ('$id','$ImageName')"; 
+    //        $stmt = $pdo->prepare($sql);
+    //        $stmt->execute();
+    //        $result = $stmt->fetchAll();    
+    //        $B += 1;
+    //        }

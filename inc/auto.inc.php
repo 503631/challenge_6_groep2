@@ -12,3 +12,9 @@ foreach ($result as $key => $row)  {
     $prijs = $row['prijs'];
     include("template.php");
 }
+
+
+
+
+
+

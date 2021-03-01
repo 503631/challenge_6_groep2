@@ -48,8 +48,8 @@ if(isset($_POST["submit"])){
         print_r($_POST);
         // die;
 
-        include("add_photos.php");
-        
+        include_once("add_photos.php"); 
+
 
         $melding = "Nieuw album toegevoegd.";
         
