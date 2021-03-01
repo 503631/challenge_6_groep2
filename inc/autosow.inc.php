@@ -7,7 +7,7 @@ $result = $stmt->fetchAll(); // get result
 foreach ($result as $key => $row)  {
     $id = $row['id'];
     $naam = $row['naam'];
-    $img = $row['foto'];
+    // $img = $row['foto'];
     $merken = $row['merken'];
     $prijs = $row['prijs'];
 
@@ -17,6 +17,6 @@ foreach ($result as $key => $row)  {
     $result = $stmt->fetchAll(); // get result
     foreach ($result as $key => $row)  {
     $img = $row['name_photos'];
-    include("template.php");
+    include("template_recenteauto.php");
     }
     }
