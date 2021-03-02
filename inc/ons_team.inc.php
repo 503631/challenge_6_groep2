@@ -10,100 +10,100 @@
 
 <div class="bloks">
 <div class="bolks_despley">
-<img src="images/index.jpeg" alt="Car"  id="bloks_img">
+<img src="images/image.jpeg" alt="Car"  id="bloks_img">
 </div>
 <div class="bolks_text">
-<H8 style="font-size: 50%;"> naam</H8>
+<H8 style="font-size: 50%;"> African</H8>
 <br>
-<h20 style="font-size: 30%;">hallo ik ben<h20>
+<h20 style="font-size: 30%;">ik ben voor zitter van dit bedrijf <h20>
 </div>
 </div>
 
 <div class="bloks">
 <div class="bolks_despley">
-<img src="images/index.jpeg" alt="Car"  id="bloks_img">
+<img src="images/image2.jpeg" alt="Car"  id="bloks_img">
 </div>
 <div class="bolks_text">
-<H8 style="font-size: 50%;"> naam</H8>
+<H8 style="font-size: 50%;"> African</H8>
 <br>
-<h20 style="font-size: 30%;">hallo<h20>
+<h20 style="font-size: 30%;">ik ben voor zitter van dit bedrijf <h20>
 </div>
 </div>
 
 <div class="bloks">
 <div class="bolks_despley">
-<img src="images/index.jpeg" alt="Car"  id="bloks_img">
+<img src="images/image.jpeg" alt="Car"  id="bloks_img">
 </div>
 <div class="bolks_text">
-<H8 style="font-size: 50%;"> naam</H8>
+<H8 style="font-size: 50%;"> African</H8>
 <br>
-<h20 style="font-size: 30%;">hallo<h20>
+<h20 style="font-size: 30%;">ik ben voor zitter van dit bedrijf <h20>
 </div>
 </div>
 
 <div class="bloks">
 <div class="bolks_despley">
-<img src="images/index.jpeg" alt="Car"  id="bloks_img">
+<img src="images/image1.jpeg" alt="Car"  id="bloks_img">
 </div>
 <div class="bolks_text">
-<H8 style="font-size: 50%;"> naam</H8>
+<H8 style="font-size: 50%;"> African</H8>
 <br>
-<h20 style="font-size: 30%;">hallo<h20>
+<h20 style="font-size: 30%;">ik ben voor zitter van dit bedrijf <h20>
 </div>
 </div>
 
 <div class="bloks">
 <div class="bolks_despley">
-<img src="images/index.jpeg" alt="Car"  id="bloks_img">
+<img src="images/image2.jpeg" alt="Car"  id="bloks_img">
 </div>
 <div class="bolks_text">
-<H8 style="font-size: 50%;"> naam</H8>
+<H8 style="font-size: 50%;"> African</H8>
 <br>
-<h20 style="font-size: 30%;">hallo<h20>
+<h20 style="font-size: 30%;">ik ben voor zitter van dit bedrijf <h20>
 </div>
 </div>
 
 <div class="bloks">
 <div class="bolks_despley">
-<img src="images/index.jpeg" alt="Car"  id="bloks_img">
+<img src="images/image1.jpeg" alt="Car"  id="bloks_img">
 </div>
 <div class="bolks_text">
-<H8 style="font-size: 50%;"> naam</H8>
+<H8 style="font-size: 50%;"> African</H8>
 <br>
-<h20 style="font-size: 30%;">hallo<h20>
+<h20 style="font-size: 30%;">ik ben voor zitter van dit bedrijf <h20>
 </div>
 </div>
 
 <div class="bloks">
 <div class="bolks_despley">
-<img src="images/index.jpeg" alt="Car"  id="bloks_img">
+<img src="images/image.jpeg" alt="Car"  id="bloks_img">
 </div>
 <div class="bolks_text">
-<H8 style="font-size: 50%;"> naam</H8>
+<H8 style="font-size: 50%;"> African</H8>
 <br>
-<h20 style="font-size: 30%;">hallo<h20>
+<h20 style="font-size: 30%;">ik ben voor zitter van dit bedrijf <h20>
 </div>
 </div>
 
 <div class="bloks">
 <div class="bolks_despley">
-<img src="images/index.jpeg" alt="Car"  id="bloks_img">
+<img src="images/image2.jpeg" alt="Car"  id="bloks_img">
 </div>
 <div class="bolks_text">
-<H8 style="font-size: 50%;"> naam</H8>
+<H8 style="font-size: 50%;"> African</H8>
 <br>
-<h20 style="font-size: 30%;">hallo<h20>
+<h20 style="font-size: 30%;">ik ben voor zitter van dit bedrijf <h20>
 </div>
 </div>
 
 <div class="bloks">
 <div class="bolks_despley">
-<img src="images/index.jpeg" alt="Car"  id="bloks_img">
+<img src="images/image1.jpeg" alt="Car"  id="bloks_img">
 </div>
 <div class="bolks_text">
-<H8 style="font-size: 50%;"> naam</H8>
+<H8 style="font-size: 50%;"> African</H8>
 <br>
-<h20 style="font-size: 30%;">hallo<h20>
+<h20 style="font-size: 30%;">ik ben voor zitter van dit bedrijf <h20>
 </div>
 </div>
 
