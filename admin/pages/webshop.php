@@ -16,6 +16,11 @@
        location.href='../index.php';
     </script>";
   }
+  if (isset(($_POST['id']))) {
+
+    include("offertes_aan_vraggen.php");
+    
+  }
   ?>
   <!--Dit is het zoekformulier -->
   <script src="js/webshop.js"></script>
@@ -30,6 +35,13 @@
 
   <?php
 
+
+
+
+
+
+
+
   ///Hier wordt de sql -opdracht gegenereerd
   if (isset($_POST["zoeken"]) && !empty($_POST["patroon"])) {
     $patroon = htmlspecialchars($_POST["patroon"]);
@@ -38,11 +50,9 @@
     $sql = "SELECT * FROM autos_test";
   }
 
-  ?>
+  
 
 
-
-<?php
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
 $result = $stmt->fetchAll(); // get result

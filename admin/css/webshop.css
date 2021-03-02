@@ -140,3 +140,9 @@ form > .aantal{
   margin:0;
   width:100%;
 }
+.contentItem{
+  width:400px;
+  height:400px;
+  margin:auto;
+  text-align: center;
+}

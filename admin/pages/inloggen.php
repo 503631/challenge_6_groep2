@@ -34,7 +34,7 @@
 
                 if (password_verify($wachtwoord, $wachtwoordInDatabase)) {
                     $_SESSION["ID"] = session_id();
-                    $_SESSION["USER_ID"] = $resultaat["ID"];
+                    $_SESSION["USER_ID"] = $resultaat["id"];
                     $_SESSION["USER_NAAM"] = $resultaat["voornaam"];
                     $_SESSION["E-MAIL"] = $resultaat["email"];
                     $_SESSION["STATUS"] = "ACTIEF";

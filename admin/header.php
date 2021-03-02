@@ -38,6 +38,7 @@
     ?>
         <div class="user">
           <p id="user">Gebruiker: <?php echo $_SESSION["USER_NAAM"]; ?></p>
+          
         </div>
         <div class="nav">
           <ul>

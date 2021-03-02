@@ -24,25 +24,6 @@
   </div>
   <div class="filter">
         moet filter in geplaats worden
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         
     </div>  
     <div class="sowe_auto">

@@ -18,15 +18,20 @@
     //header("Content-Type: image/jpeg");
 
 
+    echo '<div class="contentItem">';
+    echo '<form action="" method="post">';
     echo '<img class="test"  src="./upload/'.$id.'/'.$img.'" />';
     // echo '<img class="test" src="data:image/jpg;base64,' . base64_encode($img) . '" />';
-    echo "<input type='hidden' name='$id' value='" . $id . "' />";
+    echo "<input type='hidden' name='id' value='" . $id . "' />";
     echo "<input type='hidden' name='$naam' id='$naam' value='" . $naam . "' />";
     echo "<input type='hidden' name='$merken' id='$merken'value='" . $merken . "' />";
     echo "<input type='hidden' name='$jaar' id='$jaar' value='" . $jaar . "' />";
     echo "<input type='hidden' name='$prijs' id='$prijs' value='" . $prijs . "' />  ";
-    echo "<br /> titel:" . $naam;
+    echo "<br /> naam:" . $naam;
     echo "<br /> prijs:" . $prijs;
+    echo '<input class="button" type="submit" value=" offertes aan vraggen ">';
+    echo '</form>';
+    echo '</div>';
     echo "<hr />";
 
 
