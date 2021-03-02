@@ -9,7 +9,7 @@
   <script src="https://kit.fontawesome.com/6488e6347e.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="css/navbar.css" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style_sowe.css" />
   <link rel="shortcut icon" href="images/cars.ico" type="image/x-icon">
   <title>v!st@CARS</title>
 </head>
@@ -36,13 +36,3 @@ else{
   header("Location: showroom.php");
 }
 
-?>
-  <!-- #region Footer-->
-  <div id="footer"></div>
-  <script>
-    $("#footer").load("common/footer.html");
-  </script>
-  <!-- #endregion -->
-</body>
-
-</html>

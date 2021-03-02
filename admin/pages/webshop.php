@@ -25,7 +25,7 @@
         <input type="text" style="float:left; width:70%;" id="patroon" name="patroon" placeholder="Zoek albums" />
         <input type="submit" style="float:none; width:10%; font-size: 1.2rem;" id="zoeken" name="zoeken" value="&#128270;" /> </br>
       </div>
-    </form>
+    </form> 
   </div>
 
   <?php
@@ -50,9 +50,18 @@ $result = $stmt->fetchAll(); // get result
 foreach ($result as $key => $row)  {
     $id = $row['id'];
     $naam = $row['naam'];
-    $img = $row['foto'];
+    // $img = $row['foto'];
     $merken = $row['merken'];
     $prijs = $row['prijs'];
     $jaar = $row['jaar'];
+    // include("template.php");
+
+    $sql = "SELECT * FROM photos where auto_id = $id LIMIT 1" ;
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute();
+    $result = $stmt->fetchAll(); // get result
+    foreach ($result as $key => $row)  {
+    $img = $row['name_photos'];
     include("template.php");
+    }   
 }

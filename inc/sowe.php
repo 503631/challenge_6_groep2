@@ -35,23 +35,17 @@ img {vertical-align: middle;}
 
 <div class="slideshow-container">
 
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-<?Php  echo '<img class="sowe_auto" src="data:image/jpg;base64,' . base64_encode($img) . '" / style="width:100%">' ?>
-  <div class="text">Caption Text</div>
-</div>
+<?php
+    $sql = "SELECT * FROM photos where auto_id = $id" ;
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute();
+    $result = $stmt->fetchAll(); // get result
+    foreach ($result as $key => $row)  {
+    $img = $row['name_photos'];
+  include("img_sowe.php");
+    }
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-<?Php  echo '<img class="sowe_auto" src="data:image/jpg;base64,' . base64_encode($img_2) . '" / style="width:100%">' ?>
-  <div class="text">Caption Two</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-<?Php  echo '<img class="sowe_auto" src="data:image/jpg;base64,' . base64_encode($img_3) . '" / style="width:100%">' ?>
-  <div class="text">Caption Three</div>
-</div>
+    ?>
 
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -59,11 +53,6 @@ img {vertical-align: middle;}
 </div>
 <br>
 
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
 
 <script>
 var slideIndex = 1;
@@ -157,6 +146,22 @@ function showSlides(n) {
   <tr>
     <td>jaar van bouw</td>
     <?Php echo "<td> $jaar </td>" ?>
+  </tr>
+  <tr>
+    <td>???</td>
+    <?Php echo "<td></td>" ?>
+  </tr>
+  <tr>
+    <td>???</td>
+    <?Php echo "<td></td>" ?>
+  </tr>
+  <tr>
+    <td>???</td>
+    <?Php echo "<td></td>" ?>
+  </tr>
+  <tr>
+    <td>???</td>
+    <?Php echo "<td></td>" ?>
   </tr>
 </table>
 

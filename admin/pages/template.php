@@ -18,8 +18,8 @@
     //header("Content-Type: image/jpeg");
 
 
-
-    echo '<img class="test" src="data:image/jpg;base64,' . base64_encode($img) . '" />';
+    echo '<img class="test"  src="./upload/'.$id.'/'.$img.'" />';
+    // echo '<img class="test" src="data:image/jpg;base64,' . base64_encode($img) . '" />';
     echo "<input type='hidden' name='$id' value='" . $id . "' />";
     echo "<input type='hidden' name='$naam' id='$naam' value='" . $naam . "' />";
     echo "<input type='hidden' name='$merken' id='$merken'value='" . $merken . "' />";

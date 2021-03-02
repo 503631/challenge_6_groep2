@@ -40,13 +40,13 @@ if(isset($_POST["submit"])){
         $last_id = $row['id'];
 
     }
-        echo "$last_id";
-        //van hier foto's in database toevoegen
-        echo "fotos: ";
-        print_r($_FILES);
-        echo "<br />post: ";
-        print_r($_POST);
-        // die;
+        // echo "$last_id";
+        // //van hier foto's in database toevoegen
+        // echo "fotos: ";
+        // print_r($_FILES);
+        // echo "<br />post: ";
+        // print_r($_POST);
+        // // die;
 
         include_once("add_photos.php");
 

@@ -174,3 +174,21 @@
         height: 1000px;
         background-color: black;
     }
+    .title{
+      text-align: center;
+    }
+    .sowe{
+      margin: auto;
+      height: 800px;
+      width: 1100px;
+      position: auto;
+      background-color:  #6161fb;
+      position: static;
+      margin-top:0px;
+      
+    }
+    .slideshow-container {
+      max-width: 500px;
+      position: relative;
+      margin: auto;
+    }
