@@ -8,15 +8,31 @@ if (isset($_SESSION["ID"]) && ($_SESSION["STATUS"] != "ACTIEF")) {
 }
 ?>
 <?php
+
+
+
+if (isset(($_POST['id']))) {
+    $id = $_POST['id'];
+    
+
+    include("offertes_delete.php");
+    
+  }
+
+
+
+
 $sql = "SELECT * FROM offertes" ;
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
 $result = $stmt->fetchAll(); // get result
 
+
 foreach ($result as $key => $row)  {
+    $id = $row['id'];
     $auto_id = $row['auto_id'];
     $klant_id = $row['klant_id'];
-}
+
 
     $sql = "SELECT * FROM autos_test where id = $auto_id";
     $stmt = $pdo->prepare($sql);
@@ -24,11 +40,11 @@ foreach ($result as $key => $row)  {
     $result = $stmt->fetchAll(); // get result
     
     foreach ($result as $key => $row)  {
-        $id = $row['id'];
         $naam = $row['naam'];
         // $img = $row['foto'];
         $merken = $row['merken'];
         $prijs = $row['prijs'];
+        $jaar = $row['jaar'];
     }       
     
         $sql = "SELECT * FROM klant where id = $klant_id";
@@ -42,9 +58,12 @@ foreach ($result as $key => $row)  {
 
     }
 
-    
+    include("offertes.php");
 
-    
+}  
+
+
+
 
 
 

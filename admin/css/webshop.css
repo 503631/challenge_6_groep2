@@ -146,3 +146,14 @@ form > .aantal{
   margin:auto;
   text-align: center;
 }
+.offertes{
+  margin-top: 50px;
+  width:300px;
+  height:180px;
+  background-color:  #6161fb;
+  margin: auto;
+  text-align: center;
+  display:flex;
+  justify-content:center;
+  
+}
