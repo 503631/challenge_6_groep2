@@ -22,10 +22,10 @@
   <div class="top_img">V!ST@CARS</div>
   <div class="centered">lorem ipsum is slechts een proefdruck</div>
   </div>
-  <div class="filter">
+  <!-- <div class="filter">
         moet filter in geplaats worden
         
-    </div>  
+    </div>   -->
     <div class="sowe_auto">
 <?php    include_once("inc/auto.inc.php");   ?>
     </div>
